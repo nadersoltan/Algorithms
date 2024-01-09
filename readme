@@ -1,0 +1,40 @@
+ALGORITHM Set 1 
+VAR
+tab : ARRAY_OF INTEGER[4]; 
+i(INTEGER)
+sum:INTEGER:=0;
+BEGIN
+tab := {3,1,7,9}; 
+FOR i FROM 0 TO 9 STEP 1 DO 
+sum:=sum+i;
+Write(tab[i])
+END_FOR
+write(sum)
+END 
+
+
+ALGORITHM Set 2
+VAR
+tab: ARRAY_OF INTEGER {5};
+i(INTEGER)
+sum:INTEGER:=0;
+BEGIN
+tab:={2,4,1,9,3};
+FOR i FROM 0 TO 3 STEP 1 DO
+write(tab{i})
+sum:=sum+i
+END_FOR
+write(sum)
+END
+
+
+
+PROCEDURE dot_product(n:INTEGER,VAR ps:ARRAY_OF INTEGER)
+VAR
+    i:INTEGER;
+BEGIN
+    FOR i FROM 0 TO ps DO
+        read(ps{i})
+    END_FOR
+END
+
