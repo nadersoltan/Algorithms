@@ -1,0 +1,17 @@
+PROCEDURE est palindrome (n:INTEGER):INTEGER
+VAR
+    RESULT:INTEGER:=1;
+    i:INTEGER;
+BEGIN
+FOR i FROM 1 TO n DO
+    RESULT:=result *x;
+END_FOR
+RETURN result;
+IF (n=0) THEN
+    RETURN 0;
+ELSE_IF (n=1) THEN
+    RETURN 1
+ELSE
+RETURN est palindrome(n-1)+est palindrome(n-2)
+END_IF
+END
